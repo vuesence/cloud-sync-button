@@ -62,12 +62,27 @@ export default {
 </script>
 
 <style>
+html, body {
+  height:100%;
+  padding:0;
+  margin:0;
+}
+body {
+  /* color: #2c3e50; */
+  /* margin: 20px; */
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
 #app {
-  color: #2c3e50;
-  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 button {
-  margin: 0 0.5em 1em 0;
+  margin: 0 0.5em 70px 0;
   padding: 5px 20px;
   font-size: 1.1em;
 }
