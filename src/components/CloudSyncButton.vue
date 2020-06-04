@@ -1,7 +1,7 @@
 <template>
 	<div class="button button_start">
-		<div class="buttonTitle">{{ title }}</div>
-		<div class="buttonTitleDone">{{ titleDone }}</div>
+		<div class="button-title">{{ title }}</div>
+		<div class="button-title-done">{{ titleDone }}</div>
 		<div class="buttonImg">
 			<div class="buttonCloud">
 				<svg
@@ -66,21 +66,20 @@ export default {
 	props: {
 		title: String,
 		titleDone: String,
-		progress: Number,
+		syncProgress: Number,
 		styling: Object,
 		inSync: Boolean,
 	},
 	data() {
 		return {
-      progressStartValue: 0,
-      progressStopValue: 100,
+      syncProgressStartValue: 0,
+      syncProgressStopValue: 100,
 			btn: Object,
 			loadBg: Object,
 			// inSync: false,
 		};
 	},
 	mounted() {
-    // this.$el;
     this.loadBg = this.$el.querySelector('.buttonBackground');
     this.$el.style.background = this.styling.btnColor || "#725fdf"
     this.loadBg.style.background = this.styling.loadColor || "#81d427"
@@ -91,31 +90,31 @@ export default {
     this.$el.querySelector('.buttonCheck__path').style.stroke = this.styling.strokeColor || "#fff"    
 	},
 	watch: {
-		progress: {
+		syncProgress: {
 			handler() {
 				if (this.inSync) {          
           this.$el.classList.remove("button_start")
-          if (this.progress >= this.progressStopValue) {
+          if (this.syncProgress >= this.syncProgressStopValue) {
             this.$el.classList.remove("button_loading")
             this.$el.classList.add("button_loaded")
           } else {
             this.$el.classList.add("button_loading");          
           }
-          this.loadBg.style.width = (this.progress >= 100 ? 100 : this.progress) + "%";
+          this.loadBg.style.width = (this.syncProgress >= 100 ? 100 : this.syncProgress) + "%";
 				}
 			},
     },
     inSync: {
 			handler() {
 				if (this.inSync) {
-					this.loadBg.style.width = this.progressStartValue + "%";
+					this.loadBg.style.width = this.syncProgressStartValue + "%";
 					this.$el.classList.remove("button_start");
 					this.$el.classList.add("button_loading");
 				} else {
           this.$el.classList.remove("button_loaded");
           this.$el.classList.remove("button_loading");
           this.$el.classList.add("button_start");
-          this.loadBg.style.width = this.progressStartValue + "%";
+          this.loadBg.style.width = this.syncProgressStartValue + "%";
 				}
 			},
 		},
@@ -153,7 +152,7 @@ export default {
   .button_loading {
     background: #725fdf;
   }
-  .button_loading .buttonTitle {
+  .button_loading .button-title {
     left: -100px;
   }
   .button_loading .buttonImg {
@@ -215,15 +214,15 @@ export default {
     -webkit-animation: dash 0.5s linear forwards;
     animation: dash 0.5s linear forwards;
   }
-  .button_loaded .buttonTitleDone {
+  .button_loaded .button-title-done {
     z-index: 6;
     -webkit-animation: textEnd 0.7s linear forwards 0.3s;
     animation: textEnd 0.7s linear forwards 0.3s;
   }
-  .button_loaded .buttonTitle {
+  .button_loaded .button-title {
     left: -100px;
   }
-  .buttonTitle {
+  .button-title {
     position: relative;
     left: 10px;
     width: 80px;
@@ -234,7 +233,7 @@ export default {
     transition: 1s;
     margin-top: 2px;
   }
-  .buttonTitleDone {
+  .button-title-done {
     position: absolute;
     margin-left: 7px;
     width: 80px;
@@ -266,7 +265,6 @@ export default {
     height: 100%;
   }
   .buttonCloud svg {
-    fill: #fff;
     width: 100%;
     height: 100%;
   }
@@ -304,7 +302,6 @@ export default {
   }
   .buttonArrow_up svg,
   .buttonArrow_down svg {
-    fill: #fff;
     width: 9px;
     height: 12px;
   }
