@@ -6,7 +6,7 @@ Vue.js component representing button with cloud synchronization animation
 
 # How to use
 
-This component consists of one `.vue` file that can be copy-pasted to your Vue.js project or the module can be plugged in as an NPM package:
+This component consists of one `CloudSyncButton.vue` file that can be copy-pasted into your Vue.js project or can be plugged in as an NPM package:
 
 ```bash
 npm install @vuesence/cloud-sync-button --save
@@ -18,61 +18,60 @@ Then you can use it in the your Vue code:
 <template>
 	<div id="app">
 		<CloudSyncButton
-            title="Sync"
-            titleDone="Done"
-            @click.native="startSync"
-            :syncProgress="syncProgress"
-            :inSync="inSync"
-            :styling="{
+			title="Sync"
+			titleDone="Done"
+			@click.native="startSync"
+			:syncProgress="syncProgress"
+			:inSync="inSync"
+			:styling="{
                 loadColor: '#81d427',
                 strokeColor: '#fff',
                 btnColor: '#011e4a'
-            }"            
-        />
+            }"
+		/>
 	</div>
 </template>
 
 <script>
-    import CloudSyncButton from "./CloudSyncButton.vue";
+	import CloudSyncButton from "./CloudSyncButton.vue";
 
-    export default {
-        name: "App",
-        components: {
-            CloudSyncButton,
-        },
-        data() {
-            return {
-                syncProgress: 0,
-                inSync: false,
-            };
-        },
-        methods: {
-            startSync() {
-                this.syncProgress = 0;
-                this.inSync = true;
-            },
-            stopSync() {
-                this.syncProgress = 0;
-                this.inSync = false;
-            },
-            completeSync() {
-                this.syncProgress = 100;
-                setTimeout(() => {
-                    this.stopSync();
-                }, 2000);
-            },
-        },
-    };
+	export default {
+		name: "App",
+		components: {
+			CloudSyncButton,
+		},
+		data() {
+			return {
+				syncProgress: 0,
+				inSync: false,
+			};
+		},
+		methods: {
+			startSync() {
+				this.syncProgress = 0;
+				this.inSync = true;
+			},
+			stopSync() {
+				this.syncProgress = 0;
+				this.inSync = false;
+			},
+			completeSync() {
+				this.syncProgress = 100;
+				setTimeout(() => {
+					this.stopSync();
+				}, 2000);
+			},
+		},
+	};
 </script>
 ```
 
-Two reactive parameters handle the button state - `inSync` - starts and stops the synchronization, 
+Two reactive parameters handle the button state: `inSync` - starts and stops the synchronization,
 and `syncProgress` - shows the synchronization progress.
 
 `startSync`, `stopSync` and `completeSync` methods are used to manage the button representation programmatically.
 
 For more details please see an example of usage in the `App.vue`
-
 
 ## Demo
 
@@ -83,8 +82,6 @@ For more details please see an example of usage in the `App.vue`
 Try it on <a href="https://codesandbox.io/s/cloud-sync-button-hv9dr" target="_blank">codesandbox.io</a>
 
 > ! The version on `codesandbox.io` might be slightly out of date
-
-
 
 ## Troubleshooting
 
