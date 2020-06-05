@@ -81,7 +81,7 @@ For more details please see an example of usage in the `App.vue`
 
 Try it on <a href="https://codesandbox.io/s/cloud-sync-button-hv9dr" target="_blank">codesandbox.io</a>
 
-> ! The version on `codesandbox.io` might be slightly out of date
+<!-- > ! The version on `codesandbox.io` might be slightly out of date -->
 
 ## Troubleshooting
 
