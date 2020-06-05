@@ -2,7 +2,7 @@
 
 Vue.js button component representing synchronization with cloud data
 
-![VB-preview]()
+![VB-preview](https://altrusl.github.io/vuesence-cloud-sync-button/csb.gif)
 
 # How to use
 
