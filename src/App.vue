@@ -1,5 +1,8 @@
 <template>
   <div id="app">
+
+    <h1>Cloud Sync Button (<a href="https://github.com/altrusl/vuesence-cloud-sync-button" target="_blank" rel="noopener noreferrer">GitHub</a>)</h1>
+    
     <div class="panel">
 			<button @click="startSync">Start Sync</button>
 			<button @click="syncProgress = 20">syncProgress = 20</button>
@@ -82,8 +85,13 @@ body {
   align-items: center;
 }
 button {
-  margin: 0 0.5em 70px 0;
+  margin: 30px 15px 70px 0;
   padding: 5px 20px;
   font-size: 1.1em;
+}
+h1 a {
+  color: #555;
+  text-decoration: none;
+  font-size: 0.7em;
 }
 </style>
