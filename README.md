@@ -1,18 +1,18 @@
 # Cloud Sync Button
 
-Vue.js button component representing synchronization with cloud data
+Vue.js component representing button with cloud synchronization animation
 
 ![VB-preview](https://altrusl.github.io/vuesence-cloud-sync-button/csb.gif)
 
 # How to use
 
-This component consists of one `.vue` file that can be copy-pasted to your Vue.js project or plugged in as an NPM package:
+This component consists of one `.vue` file that can be copy-pasted to your Vue.js project or the module can be plugged in as an NPM package:
 
 ```bash
 npm install @vuesence/cloud-sync-button --save
 ```
 
-Then you can use it in your Vue component:
+Then you can use it in the your Vue code:
 
 ```html
 <template>
@@ -67,11 +67,11 @@ Then you can use it in your Vue component:
 ```
 
 Two reactive parameters handle the button state - `inSync` - starts and stops the synchronization, 
-and `syncProgress` - shows the progress.
+and `syncProgress` - shows the synchronization progress.
 
-`startSync`, `stopSync` and `completeSync` methods are used to manage the the button representation programmatically.
+`startSync`, `stopSync` and `completeSync` methods are used to manage the button representation programmatically.
 
-For more details please see example of usage in the `App.vue`
+For more details please see an example of usage in the `App.vue`
 
 
 ## Demo
