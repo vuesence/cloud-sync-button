@@ -1,4 +1,5 @@
 module.exports = {
     publicPath: './',
-    outputDir: './docs',
+    outputDir: './dist',
+    css: { extract: false }
 };
