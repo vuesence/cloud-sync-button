@@ -1,10 +1,40 @@
 {
-  "name": "cloud-sync-button",
+  "name": "@vuesence/cloud-sync-button",
+  "description": "Vue.js component representing button with cloud synchronization animation",
   "version": "0.5.0",
-  "private": true,
+  "private": false,
+  "main": "dist/cloud-sync-button.js",
+  "module": "dist/cloud-sync-button.esm.js",
+  "unpkg": "dist/cloud-sync-button.umd.min.js",
+  "homepage": "https://altrusl.github.io/vuesence-cloud-sync-button/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/altrusl/vuesence-cloud-sync-button.git"
+  },
+  "author": {
+    "name": "Ruslan Makarov",
+    "url": "https://altrusl.github.io/cv"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "vue",
+    "sync",
+    "button",
+    "cloud sync button"
+  ],
+  "files": [
+    "src/*",
+    "package.json",
+    "README.md",
+    "LICENSE  "
+  ],
   "scripts": {
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-dist": "vue-cli-service build --target lib",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
