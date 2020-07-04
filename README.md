@@ -89,6 +89,11 @@ Any bugs, issues, feature and pull requests are welcome
 
 Please use GitHub's issue reporter or send me an <a href="mailto:ruslan.makarov@gmail.com">email</a>
 
+### Check out my other Vue.js components
+
+- <a href="https://github.com/altrusl/vuesence-book" target="_blank">Vuesence book</a> - minimalistic Vue.js based documentation system component
+- <a href="https://github.com/altrusl/vuesence-sliding-header" target="_blank">Sliding Header</a> - Vue.js component representing sliding header (or two different headers)
+
 ## Contribution
 
 Contribution is always welcome and recommended. Here is how:
