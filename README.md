@@ -33,7 +33,7 @@ Then you can use it in the your Vue code:
 </template>
 
 <script>
-	import CloudSyncButton from "./CloudSyncButton.vue";
+	import CloudSyncButton from "@vuesence/cloud-sync-button";
 
 	export default {
 		name: "App",
@@ -91,7 +91,7 @@ Please use GitHub's issue reporter or send me an <a href="mailto:ruslan.makarov@
 
 ## Contribution
 
-Contribution are always welcome and recommended. Here is how:
+Contribution is always welcome and recommended. Here is how:
 
 -   Fork the repository
 -   Clone to your machine
