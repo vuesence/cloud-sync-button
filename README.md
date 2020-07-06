@@ -1,6 +1,6 @@
 # Cloud Sync Button
 
-Button with cloud synchronization animation in vanilla javascript, Vue.js and Web component formats
+Button/progress-bar with cloud synchronization animation in vanilla JavaScript, Vue.js and Web component formats
 
 ![VB-preview](https://altrusl.github.io/vuesence-cloud-sync-button/csb.gif)
 
