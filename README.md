@@ -27,7 +27,7 @@ It's built using Custom Elements - a well supported technology nowadays. For old
 	"btnColor": "#725fdf",
 	"titleStart": "Sync",
 	"titleEnd": "Done"
-}'>
+}' />
 ```
 
 ```javascript
