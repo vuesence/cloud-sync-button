@@ -432,7 +432,7 @@ class CloudSyncButton extends HTMLElement {
 		this.status = "start";
 	}
 	initStyle() {
-		const opt = JSON.parse(this.getAttribute('btn-style'));
+		const opt = JSON.parse(this.getAttribute('options'));
 		this.btn.style.background = opt.btnColor || "#725fdf"
 		this.loadBg.style.background = opt.loadColor || "#81d427"
 		this.btn.style.color = opt.strokeColor || "#fff"

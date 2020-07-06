@@ -18,10 +18,10 @@ The code is self-explanatory
 
 ## Web Component version
 
-It's built using Custom Elements. It's a well supported technology. For older browsers a polifill is available
+It's built using Custom Elements - a well supported technology nowadays. For older browsers a polifill is available
 
 ```html
-<cloud-sync-button btn-style='{
+<cloud-sync-button options='{
 	"loadColor": "#81d427",
 	"strokeColor": "#fff",
 	"btnColor": "#725fdf",
