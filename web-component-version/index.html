@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Cloud Sync Button</title>
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<style>
+		body,
+		html {
+			height: 100%;
+			width: 100%;
+			margin: 0;
+		}
+
+		.wrapper {
+			position: absolute;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			width: 100%;
+			height: 100%;
+		}
+		.panel {
+			position: absolute;
+			font-size: 12px;
+			top: 0;
+			width: 100%;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+		}
+		.panel button {
+			margin: 5px 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- all parameters are optional -->
+		<cloud-sync-button btn-style='{
+				"loadColor": "#81d427",
+				"strokeColor": "#fff",
+				"btnColor": "#725fdf",
+				"titleStart": "Sync",
+				"titleEnd": "Done"
+			}'>
+		</cloud-sync-button>
+		<script src="script/cloud-sync-button.js"></script>
+		<div class="panel">
+			<button class="init">initSync</button>
+			<button class="update">updateSync(10)</button>
+			<button class="complete">completeSync</button>
+			<button class="reset">resetSync</button>
+		</div>
+	</div>
+
+
+	<script>
+		const aBtn = document.querySelector("cloud-sync-button");
+
+		const update = document.querySelector('.update')
+		const init = document.querySelector('.init')
+		const complete = document.querySelector('.complete')
+		const reset = document.querySelector('.reset')
+
+		init.addEventListener("click", () => {
+			aBtn.initSync()
+		})
+		update.addEventListener("click", () => {
+			aBtn.updateSync(5)
+		})
+		complete.addEventListener("click", () => {
+			aBtn.completeSync()
+		})
+		reset.addEventListener("click", () => {
+			aBtn.resetSync()
+		})
+	</script>
+
+</body>
+
+</html>
