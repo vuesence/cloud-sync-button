@@ -121,16 +121,24 @@ Try it on <a href="https://codesandbox.io/s/cloud-sync-button-hv9dr" target="_bl
 
 <!-- > ! The version on `codesandbox.io` might be slightly out of date -->
 
+
+## Check out my other Vue.js components
+
+- <a href="https://github.com/altrusl/vuesence-book" target="_blank">Vuesence book</a> - minimalistic Vue.js based documentation system component
+- <a href="https://github.com/altrusl/vuesence-sliding-header" target="_blank">Sliding header</a> - Vue.js component representing sliding header (or two different headers)
+
+
+<img src="https://imgur.com/A92i02A.png" />
+You like Sliding Header? GitHub star it and <a href="https://twitter.com/vuesence/status/1280130154090704896?s=20">twit it!</a>
+
+-------
+
 ## Troubleshooting
 
 Any bugs, issues, feature and pull requests are welcome
 
 Please use GitHub's issue reporter or send me an <a href="mailto:ruslan.makarov@gmail.com">email</a>
 
-### Check out my other Vue.js components
-
-- <a href="https://github.com/altrusl/vuesence-book" target="_blank">Vuesence book</a> - minimalistic Vue.js based documentation system component
-- <a href="https://github.com/altrusl/vuesence-sliding-header" target="_blank">Sliding header</a> - Vue.js component representing sliding header (or two different headers)
 
 ## Contribution
 
