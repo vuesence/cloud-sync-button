@@ -8,7 +8,7 @@ Button/progress-bar with cloud synchronization animation in vanilla JavaScript, 
 
 This component is available in three versions:
 
-1. Vue.js component - under the root
+1. Vue.js component - in the `src` directory
 2. Vanilla JavaScript code - in the `vanilla-javascript-version` directory
 3. As a `Web component` - in the `web-component-version` directory
 
@@ -16,7 +16,7 @@ This component is available in three versions:
 
 The code is self-explanatory
 
-## Web component version
+## Web Component version
 
 It's built using Custom Elements. It's a well supported technology. For older browsers a polifill is available
 
