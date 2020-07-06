@@ -1,12 +1,47 @@
 # Cloud Sync Button
 
-Vue.js component representing button with cloud synchronization animation
+Button with cloud synchronization animation in vanilla javascript, Vue.js and Web component formats
 
 ![VB-preview](https://altrusl.github.io/vuesence-cloud-sync-button/csb.gif)
 
 # How to use
 
-This component consists of one `CloudSyncButton.vue` file that can be copy-pasted into your Vue.js project or can be plugged in as an NPM package:
+This component is available in three versions:
+
+1. Vue.js component - under the root
+2. Vanilla JavaScript code - in the `vanilla-javascript-version` directory
+3. As a `Web component` - in the `web-component-version` directory
+
+## Vanilla JavaScript version
+
+The code is self-explanatory
+
+## Web component version
+
+It's built using Custom Elements. It's a well supported technology. For older browsers a polifill is available
+
+```html
+<cloud-sync-button btn-style='{
+	"loadColor": "#81d427",
+	"strokeColor": "#fff",
+	"btnColor": "#725fdf",
+	"titleStart": "Sync",
+	"titleEnd": "Done"
+}'>
+```
+
+```javascript
+const aBtn = document.querySelector("cloud-sync-button");
+...
+aBtn.initSync();
+aBtn.updateSync(10);
+aBtn.completeSync();
+aBtn.resetSync();
+```
+
+## Vue version
+
+Vue component consists of one `CloudSyncButton.vue` file that can be copy-pasted into your Vue.js project or can be plugged in as an NPM package:
 
 ```bash
 npm install @vuesence/cloud-sync-button --save
@@ -92,7 +127,7 @@ Please use GitHub's issue reporter or send me an <a href="mailto:ruslan.makarov@
 ### Check out my other Vue.js components
 
 - <a href="https://github.com/altrusl/vuesence-book" target="_blank">Vuesence book</a> - minimalistic Vue.js based documentation system component
-- <a href="https://github.com/altrusl/vuesence-sliding-header" target="_blank">Sliding Header</a> - Vue.js component representing sliding header (or two different headers)
+- <a href="https://github.com/altrusl/vuesence-sliding-header" target="_blank">Sliding header</a> - Vue.js component representing sliding header (or two different headers)
 
 ## Contribution
 
