@@ -129,7 +129,7 @@ Try it on <a href="https://codesandbox.io/s/cloud-sync-button-hv9dr" target="_bl
 
 
 <img src="https://imgur.com/A92i02A.png" />
-You like Cloud Sync Button? GitHub star it and <a href="https://twitter.com/vuesence/status/1280130154090704896?s=20">twit it!</a>
+You like Cloud Sync Button? Star it and <a href="https://twitter.com/vuesence/status/1280130154090704896?s=20">retweet it!</a>
 
 -------
 
