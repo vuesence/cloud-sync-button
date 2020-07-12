@@ -1,7 +1,7 @@
 {
   "name": "@vuesence/cloud-sync-button",
   "description": "Button/progress-bar with cloud synchronization animation in vanilla JavaScript, Vue.js and Web component formats",
-  "version": "0.9.2",
+  "version": "0.9.3",
   "private": false,
   "main": "dist/cloud-sync-button.umd.js",
   "module": "dist/cloud-sync-button.esm.js",
