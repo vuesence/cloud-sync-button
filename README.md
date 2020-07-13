@@ -112,7 +112,7 @@ For more details please see an example of usage in the `App.vue`
 
 <a href="https://altrusl.github.io/vuesence-cloud-sync-button/" target="_blank">https://altrusl.github.io/vuesence-cloud-sync-button/</a>
 
-> If you like it - star it. Thank you.
+<!-- > If you like it - star it. Thank you. -->
 
 
 ## Playground
