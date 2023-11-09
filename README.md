@@ -2,7 +2,7 @@
 
 Button/progress-bar with cloud synchronization animation in vanilla JavaScript, Vue.js and Web component formats
 
-![VB-preview](https://altrusl.github.io/vuesence-cloud-sync-button/csb.gif)
+![VB-preview](https://vuesence.github.io/cloud-sync-button/csb.gif)
 
 # How to use
 
@@ -110,7 +110,7 @@ For more details please see an example of usage in the `App.vue`
 
 ## Demo
 
-<a href="https://altrusl.github.io/vuesence-cloud-sync-button/" target="_blank">https://altrusl.github.io/vuesence-cloud-sync-button/</a>
+<a href="https://vuesence.github.io/cloud-sync-button/" target="_blank">https://vuesence.github.io/cloud-sync-button/</a>
 
 <!-- > If you like it - star it. Thank you. -->
 
